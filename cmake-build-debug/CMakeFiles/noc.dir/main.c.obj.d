@@ -21,12 +21,5 @@ CMakeFiles/noc.dir/main.c.obj: \
  D:/dev_env/JetBrains/CLion_2024_3_4/bin/mingw/x86_64-w64-mingw32/include/malloc.h \
  D:/dev_env/JetBrains/CLion_2024_3_4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h \
  D:/dev_env/JetBrains/CLion_2024_3_4/bin/mingw/x86_64-w64-mingw32/include/errno.h \
- D:/dev_env/JetBrains/CLion_2024_3_4/bin/mingw/x86_64-w64-mingw32/include/string.h \
- D:/dev_env/JetBrains/CLion_2024_3_4/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
- D:/dev_env/JetBrains/CLion_2024_3_4/bin/mingw/x86_64-w64-mingw32/include/time.h \
- D:/dev_env/JetBrains/CLion_2024_3_4/bin/mingw/x86_64-w64-mingw32/include/sys/timeb.h \
- D:/dev_env/JetBrains/CLion_2024_3_4/bin/mingw/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
- D:/dev_env/JetBrains/CLion_2024_3_4/bin/mingw/x86_64-w64-mingw32/include/_timeval.h \
- D:/dev_env/JetBrains/CLion_2024_3_4/bin/mingw/x86_64-w64-mingw32/include/pthread_time.h \
  D:\research\NOC\Projects\noc_base_simulator\data_structure.h \
  D:\research\NOC\Projects\noc_base_simulator\func_declaration.h

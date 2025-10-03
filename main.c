@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <time.h>
 
 #include "data_structure.h"
 #include "func_declaration.h"
@@ -14,7 +12,7 @@ int main() {
     double inj_rate_step  = params->inj_rate_step;
     int size_x         	  = params->size_x;
     //重定向输出
-    file = fopen("noc_results_BC_CA_4X4_BF4_VC2.txt","w");
+    file = fopen("noc_results_TP_GISU_4X4_BF8_VC2_SP50.txt","w");
     if (file == NULL) {
         perror("fopen failed");  // 打印具体错误原因（如“Permission denied”“No such file or directory”）
         free(params);                   // 避免内存泄漏
@@ -25,9 +23,11 @@ int main() {
     for(double inj_rate = inj_rate_start ; inj_rate <= inj_rate_end ; inj_rate += inj_rate_step ){
         Network network;
         initialize_network(&network , params);
+        NoC_congestion_matrix* congestion_matrix = (NoC_congestion_matrix*)malloc(sizeof(NoC_congestion_matrix));
+        initialize_congestion_matrix(congestion_matrix, params);
         fprintf(file,"inj_rate = %.2f\n",inj_rate);
         printf("inj_rate = %.2f\n",inj_rate);
-        simulate(&network, params , inj_rate);
+        simulate(&network, params, inj_rate, congestion_matrix);
         print_metrics(network);
         // 释放内存
         for (int i = 0; i < size_x; i++) {

@@ -10,6 +10,8 @@
 #define NORTH 4
 #define LOCAL 0
 #define QOS_TYPE_NUM 5
+#define MAX_MESH_SIZE_X 20
+#define MAX_MESH_SIZE_Y 20
 // Flit
 typedef struct {
     int source;//src router , router_x_id = source / y_width router_y_id = source % y_width
@@ -75,7 +77,33 @@ typedef struct{
     int traffic_pattern   ;
     int prior_strategy    ;
     int routing_algorithm ;
+    int global_sample_cycles;
 }SimParams;
 
 extern FILE *file;
+
+typedef struct {
+    int up_link[MAX_MESH_SIZE_X][MAX_MESH_SIZE_Y];
+    int down_link[MAX_MESH_SIZE_X][MAX_MESH_SIZE_Y];
+    int left_link[MAX_MESH_SIZE_X][MAX_MESH_SIZE_Y];
+    int right_link[MAX_MESH_SIZE_X][MAX_MESH_SIZE_Y];
+}NoC_congestion_matrix;
+
+// 互联调度表，用于存储动态规划和最佳路由端口信息,需要存储四个象限的表格，分别对应源-目标路由器的相对位置
+// 例如,第一象限代表目标在源的东北方
+typedef struct {
+    int north_east_dp[MAX_MESH_SIZE_X][MAX_MESH_SIZE_Y];
+    int north_east_port[MAX_MESH_SIZE_X][MAX_MESH_SIZE_Y];
+    int north_west_dp[MAX_MESH_SIZE_X][MAX_MESH_SIZE_Y];
+    int north_west_port[MAX_MESH_SIZE_X][MAX_MESH_SIZE_Y];
+    int south_west_dp[MAX_MESH_SIZE_X][MAX_MESH_SIZE_Y];
+    int south_west_port[MAX_MESH_SIZE_X][MAX_MESH_SIZE_Y];
+    int south_east_dp[MAX_MESH_SIZE_X][MAX_MESH_SIZE_Y];
+    int south_east_port[MAX_MESH_SIZE_X][MAX_MESH_SIZE_Y];
+}InterConnectSchedulerTable;
+
+typedef struct {
+    int x;
+    int y;
+}Coordinate;
 #endif

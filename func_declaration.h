@@ -21,7 +21,8 @@ void initialize_network(Network* network, SimParams* params);
 
 // 计算路由方向
 // 输入:Router* cur_router,要计算输出端口的flit,纵轴长度 
-int calculate_routing(Router* cur_router, Flit* flit, int size_y,SimParams* params,Network* last_network);
+int calculate_routing(Router* cur_router, Flit* flit, int size_y,SimParams* params,
+                      Network* last_network,int cur_cycle,NoC_congestion_matrix* matrix);
 
 // 获取相反方向
 // 输入:当前路由器的目标输出端口值 
@@ -60,9 +61,9 @@ SelectedFlit* compare_by_qos(SelectedFlit* flit_list, int num);
 
 SelectedFlit* compare_by_time(SelectedFlit* flit_list, int num);
 
-SelectedFlit* find_flit_for_out_dir(Router* router,SimParams* params,int out_dir,Network* last_network);
+SelectedFlit* find_flit_for_out_dir(Router* router,SimParams* params,int out_dir,Network* last_network,NoC_congestion_matrix* matrix,int cur_cycle);
 
-void router_transfer(Network* last_network,Network* cur_network,Router* last_router,SimParams* params);
+void router_transfer(Network* last_network,Network* cur_network,Router* last_router,SimParams* params,NoC_congestion_matrix* matrix);
 
 int traffic_pattern(int source,SimParams* params,int pattern);
 
@@ -71,7 +72,7 @@ int traffic_injection(Network* network , int cur_cycle , double inj_rate , SimPa
 //free_network只能free由malloc分配的，因为free函数只适用于堆上分配的内存
 int free_network(Network* network,int size_x,int size_y);
 
-void simulate(Network* cur_network , SimParams* params , double inj_rate);
+void simulate(Network* cur_network , SimParams* params , double inj_rate , NoC_congestion_matrix* free_matrix);
 
 void print_metrics(Network network);
 
@@ -93,4 +94,18 @@ void print_vc_occupancy(Network* network, SimParams* params, int cur_cycle);
 int getBitCount(unsigned int size);
 
 unsigned int reverseBinary(unsigned int src, int bitCount, unsigned int size);
+
+void initialize_congestion_matrix(NoC_congestion_matrix* matrix , SimParams* params);
+
+void initialize_scheduler_table(SimParams* params ,InterConnectSchedulerTable* scheduler_table);
+
+int calculate_min_conges_port(int cur_cycle,SimParams* params,NoC_congestion_matrix* congestion_matrix,Coordinate cur,Coordinate dest);
+
+void south_west_dp(SimParams* params, NoC_congestion_matrix* congestion_matrix, InterConnectSchedulerTable* scheduler_table);
+
+void update_weight_matrix(Network* cur_network,int cur_cycle,SimParams* params,NoC_congestion_matrix* congestion_matrix);
+
+int greedy_routing(Router** router,Coordinate cur,Coordinate dest);
+
+int DoR_routing(Coordinate cur,Coordinate dest);
 #endif

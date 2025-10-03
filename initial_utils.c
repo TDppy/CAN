@@ -53,3 +53,29 @@ void initialize_network(Network* network, SimParams* params) {
         }
     }
 }
+
+void initialize_congestion_matrix(NoC_congestion_matrix* matrix , SimParams* params){
+    for (int i = 0 ; i < params->size_x ; i++) {
+        for (int j = 0 ; j < params->size_y ; j++) {
+            matrix->down_link[i][j] = 0;
+            matrix->up_link[i][j] = 0;
+            matrix->left_link[i][j] = 0;
+            matrix->right_link[i][j] = 0;
+        }
+    }
+}
+
+void initialize_scheduler_table(SimParams* params ,InterConnectSchedulerTable* scheduler_table) {
+    for (int i = 0; i < params->size_x ; i++) {
+        for (int j = 0; j < params->size_y ; j++) {
+            scheduler_table->north_east_dp[i][j] = 0;
+            scheduler_table->north_east_port[i][j] = LOCAL;
+            scheduler_table->north_west_dp[i][j] = 0;
+            scheduler_table->north_west_port[i][j] = LOCAL;
+            scheduler_table->south_east_dp[i][j] = 0;
+            scheduler_table->south_east_port[i][j] = LOCAL;
+            scheduler_table->south_west_dp[i][j] = 0;
+            scheduler_table->south_west_port[i][j] = LOCAL;
+        }
+    }
+}

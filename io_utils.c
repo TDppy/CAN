@@ -95,6 +95,8 @@ SimParams* setup_sim_params(const char* filename,SimParams* params){
             	params->prior_strategy = atoi(value);
             }else if (strcmp(key,"routing_algorithm") == 0) {
                 params->routing_algorithm = atoi(value);
+            }else if (strcmp(key,"global_sample_cycles")==0) {
+                params->global_sample_cycles = atoi(value);
             }else;
         }
     }

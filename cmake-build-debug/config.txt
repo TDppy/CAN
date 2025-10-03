@@ -1,20 +1,21 @@
 // comment line
-inj_rate_start = 0.03
+inj_rate_start = 0.1
 inj_rate_end   = 0.8
 inj_rate_step  = 0.03
 size_x         = 4
 size_y         = 4
-buffer_size    = 4
+buffer_size    = 8
 num_vcs        = 2
 total_cycles   = 15000
 max_flits_num  = 8000
 // traffic_pattern = 1 uniform random
 // traffic_pattern = 2 bit complement
 // traffic_pattern = 3 transpose
-traffic_pattern = 2
+traffic_pattern = 3
 // prior_strategy = 1 sort by qos
 // prior_strategy = 2 sort by time
 prior_strategy  = 2
 // routing algorithm = 0   DoR Routing
 // routing algorithm = 1   Congestion Awareness Routing
-routing_algorithm = 2
+routing_algorithm = 3
+global_sample_cycles = 50
