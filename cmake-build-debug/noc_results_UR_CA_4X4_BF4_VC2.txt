@@ -1,0 +1,157 @@
+prior_strategy    = 2     
+traffic_pattern   = 1     
+routing_algorithm = 2     
+inj_rate_start    = 0.20   
+inj_rate_end      = 0.80   
+inj_rate_step     = 0.03   
+size_x            = 4     
+size_y            = 4     
+buffer_size       = 4     
+total_cycles      = 15000     
+max_flits_num     = 8000     
+num_vcs           = 2     
+---------------------------
+inj_rate = 0.20
+Total Flits Injected: 8000
+total_latency = 29684 total_flits_received = 8000
+Average Latency: 3.71 cycles
+Link Utilization: 16.26%
+Throughput: 3.15 flits/cycle
+
+inj_rate = 0.23
+Total Flits Injected: 8000
+total_latency = 30238 total_flits_received = 8000
+Average Latency: 3.78 cycles
+Link Utilization: 19.03%
+Throughput: 3.67 flits/cycle
+
+inj_rate = 0.26
+Total Flits Injected: 8000
+total_latency = 30861 total_flits_received = 8000
+Average Latency: 3.86 cycles
+Link Utilization: 21.41%
+Throughput: 4.11 flits/cycle
+
+inj_rate = 0.29
+Total Flits Injected: 8000
+total_latency = 31611 total_flits_received = 8000
+Average Latency: 3.95 cycles
+Link Utilization: 23.73%
+Throughput: 4.57 flits/cycle
+
+inj_rate = 0.32
+Total Flits Injected: 8000
+total_latency = 32465 total_flits_received = 8000
+Average Latency: 4.06 cycles
+Link Utilization: 26.36%
+Throughput: 5.08 flits/cycle
+
+inj_rate = 0.35
+Total Flits Injected: 8000
+total_latency = 33037 total_flits_received = 8000
+Average Latency: 4.13 cycles
+Link Utilization: 28.75%
+Throughput: 5.52 flits/cycle
+
+inj_rate = 0.38
+Total Flits Injected: 8000
+total_latency = 34495 total_flits_received = 8000
+Average Latency: 4.31 cycles
+Link Utilization: 31.94%
+Throughput: 6.10 flits/cycle
+
+inj_rate = 0.41
+Total Flits Injected: 8000
+total_latency = 35837 total_flits_received = 8000
+Average Latency: 4.48 cycles
+Link Utilization: 34.13%
+Throughput: 6.57 flits/cycle
+
+inj_rate = 0.44
+Total Flits Injected: 8000
+total_latency = 37064 total_flits_received = 8000
+Average Latency: 4.63 cycles
+Link Utilization: 37.02%
+Throughput: 7.09 flits/cycle
+
+inj_rate = 0.47
+Total Flits Injected: 8000
+total_latency = 38987 total_flits_received = 8000
+Average Latency: 4.87 cycles
+Link Utilization: 39.35%
+Throughput: 7.52 flits/cycle
+
+inj_rate = 0.50
+Total Flits Injected: 8000
+total_latency = 40247 total_flits_received = 8000
+Average Latency: 5.03 cycles
+Link Utilization: 41.00%
+Throughput: 7.84 flits/cycle
+
+inj_rate = 0.53
+Total Flits Injected: 8000
+total_latency = 43636 total_flits_received = 8000
+Average Latency: 5.45 cycles
+Link Utilization: 43.97%
+Throughput: 8.39 flits/cycle
+
+inj_rate = 0.56
+Total Flits Injected: 8000
+total_latency = 47509 total_flits_received = 8000
+Average Latency: 5.94 cycles
+Link Utilization: 47.04%
+Throughput: 8.95 flits/cycle
+
+inj_rate = 0.59
+Total Flits Injected: 8000
+total_latency = 49863 total_flits_received = 8000
+Average Latency: 6.23 cycles
+Link Utilization: 48.21%
+Throughput: 9.36 flits/cycle
+
+inj_rate = 0.62
+Total Flits Injected: 8000
+total_latency = 54930 total_flits_received = 8000
+Average Latency: 6.87 cycles
+Link Utilization: 50.83%
+Throughput: 9.79 flits/cycle
+
+inj_rate = 0.65
+Total Flits Injected: 8000
+total_latency = 60037 total_flits_received = 8000
+Average Latency: 7.50 cycles
+Link Utilization: 53.37%
+Throughput: 10.14 flits/cycle
+
+inj_rate = 0.68
+Total Flits Injected: 8000
+total_latency = 66501 total_flits_received = 8000
+Average Latency: 8.31 cycles
+Link Utilization: 55.82%
+Throughput: 10.77 flits/cycle
+
+inj_rate = 0.71
+Total Flits Injected: 8000
+total_latency = 76168 total_flits_received = 8000
+Average Latency: 9.52 cycles
+Link Utilization: 57.19%
+Throughput: 11.10 flits/cycle
+
+inj_rate = 0.74
+Total Flits Injected: 8000
+total_latency = 83040 total_flits_received = 8000
+Average Latency: 10.38 cycles
+Link Utilization: 59.78%
+Throughput: 11.53 flits/cycle
+
+inj_rate = 0.77
+Total Flits Injected: 8000
+total_latency = 95849 total_flits_received = 8000
+Average Latency: 11.98 cycles
+Link Utilization: 61.80%
+Throughput: 11.76 flits/cycle
+
+-------------------------
+
+
+

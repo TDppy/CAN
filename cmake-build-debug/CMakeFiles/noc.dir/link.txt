@@ -1,0 +1,3 @@
+D:\dev_env\JetBrains\CLion_2024_3_4\bin\cmake\win\x64\bin\cmake.exe -E rm -f CMakeFiles\noc.dir/objects.a
+D:\dev_env\JetBrains\CLion_2024_3_4\bin\mingw\bin\ar.exe qc CMakeFiles\noc.dir/objects.a @CMakeFiles\noc.dir\objects1.rsp
+D:\dev_env\JetBrains\CLion_2024_3_4\bin\mingw\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\noc.dir/objects.a -Wl,--no-whole-archive -o noc.exe -Wl,--out-implib,libnoc.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\noc.dir\linkLibs.rsp
