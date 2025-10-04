@@ -12,7 +12,7 @@ int main() {
     double inj_rate_step  = params->inj_rate_step;
     int size_x         	  = params->size_x;
     //重定向输出
-    file = fopen("noc_results_TP_GISU_4X4_BF8_VC2_SP50.txt","w");
+    file = fopen("noc_results_TP_GISU_8X8_BF16_VC2_SP50.txt","w");
     if (file == NULL) {
         perror("fopen failed");  // 打印具体错误原因（如“Permission denied”“No such file or directory”）
         free(params);                   // 避免内存泄漏

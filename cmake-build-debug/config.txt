@@ -1,13 +1,13 @@
 // comment line
-inj_rate_start = 0.1
-inj_rate_end   = 0.8
+inj_rate_start = 0.03
+inj_rate_end   = 0.70
 inj_rate_step  = 0.03
-size_x         = 4
-size_y         = 4
-buffer_size    = 8
+size_x         = 8
+size_y         = 8
+buffer_size    = 16
 num_vcs        = 2
 total_cycles   = 15000
-max_flits_num  = 8000
+max_flits_num  = 10000
 // traffic_pattern = 1 uniform random
 // traffic_pattern = 2 bit complement
 // traffic_pattern = 3 transpose

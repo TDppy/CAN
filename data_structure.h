@@ -1,7 +1,7 @@
 #ifndef STUC
 #define STUC
 #define NUM_DIRECTIONS 5
-#define MAX_BUFFER_SIZE 16
+#define MAX_BUFFER_SIZE 32
 #define MAX_NUM_VCS 8
 #define MAX_PATH_LENGTH 100
 #define EAST 1
@@ -25,7 +25,6 @@ typedef struct {
 } Flit;
 
 // SelectedFlits是当前路由器中选中的Flit
-
 typedef struct{
     Flit flit;
     int vc_id;

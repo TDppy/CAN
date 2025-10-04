@@ -332,7 +332,7 @@ void simulate(Network* cur_network , SimParams* params , double inj_rate,NoC_con
 void update_weight_matrix(Network* cur_network,int cur_cycle,SimParams* params,NoC_congestion_matrix* congestion_matrix) {
 	// 每十个周期收集一次网络拥塞信息
 	// 收集完成后应当立刻计算最短路，找到输出端口，后面十个周期都按照这个表来处理
-	if (cur_cycle % params->global_sample_cycles != 0) return;
+	if (cur_cycle % params->global_sample_cycles != 0 || params->routing_algorithm!=3) return;
 	initialize_congestion_matrix(congestion_matrix,params);
 	// 获取router网络头指针
 	Router** router = cur_network->routers;
