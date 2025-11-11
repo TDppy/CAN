@@ -4,13 +4,17 @@ project(noc C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(noc
-        func_declaration.h
-        data_structure.h
-        router.c
+        src/header/func_declaration.h
+        src/header/data_structure.h
+        src/routing/router_simulate.c
         main.c
-        memory_oper.c
-        io_utils.c
-        traffic_oper.c
-        initial_utils.c
+        src/utils/memory_oper.c
+        src/utils/io_utils.c
+        src/traffic/traffic_pattern.c
+        src/utils/initial_utils.c
+        src/routing/routing_algorithm.c
+        src/routing/routing_utils.c
+        src/traffic/traffic_utils.c
 )
-add_executable(new_target test-main.c)
+#add_executable(new_target test-main.c)
+#add_executable(new_target1 shuffle_traffic.c)

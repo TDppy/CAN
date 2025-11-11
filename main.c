@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "data_structure.h"
-#include "func_declaration.h"
+#include "header/data_structure.h"
+#include "header/func_declaration.h"
 FILE *file;
 int main() {
     SimParams* params = (SimParams*)malloc(sizeof(SimParams));
@@ -12,7 +12,7 @@ int main() {
     double inj_rate_step  = params->inj_rate_step;
     int size_x         	  = params->size_x;
     //重定向输出
-    file = fopen("noc_results_TP_GISU_8X8_BF16_VC2_SP50.txt","w");
+    file = fopen("noc_results_SF_GISU_8X8_BF16_VC2_SP50.txt","w");
     if (file == NULL) {
         perror("fopen failed");  // 打印具体错误原因（如“Permission denied”“No such file or directory”）
         free(params);                   // 避免内存泄漏

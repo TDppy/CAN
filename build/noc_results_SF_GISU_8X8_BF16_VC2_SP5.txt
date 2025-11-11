@@ -1,0 +1,234 @@
+prior_strategy    = 2     
+traffic_pattern   = 5     
+routing_algorithm = 3     
+inj_rate_start    = 0.03   
+inj_rate_end      = 0.95   
+inj_rate_step     = 0.03   
+size_x            = 4     
+size_y            = 4     
+buffer_size       = 16     
+total_cycles      = 15000     
+max_flits_num     = 10000     
+num_vcs           = 2     
+---------------------------
+inj_rate = 0.03
+Total Flits Injected: 10000
+total_latency = 29962 total_flits_received = 10000
+Average Latency: 3.00 cycles
+Link Utilization: 1.99%
+Throughput: 0.48 flits/cycle
+
+inj_rate = 0.06
+Total Flits Injected: 10000
+total_latency = 30123 total_flits_received = 10000
+Average Latency: 3.01 cycles
+Link Utilization: 4.00%
+Throughput: 0.96 flits/cycle
+
+inj_rate = 0.09
+Total Flits Injected: 10000
+total_latency = 30265 total_flits_received = 10000
+Average Latency: 3.03 cycles
+Link Utilization: 6.00%
+Throughput: 1.44 flits/cycle
+
+inj_rate = 0.12
+Total Flits Injected: 10000
+total_latency = 30286 total_flits_received = 10000
+Average Latency: 3.03 cycles
+Link Utilization: 7.95%
+Throughput: 1.92 flits/cycle
+
+inj_rate = 0.15
+Total Flits Injected: 10000
+total_latency = 30650 total_flits_received = 10000
+Average Latency: 3.06 cycles
+Link Utilization: 10.07%
+Throughput: 2.41 flits/cycle
+
+inj_rate = 0.18
+Total Flits Injected: 10000
+total_latency = 30633 total_flits_received = 10000
+Average Latency: 3.06 cycles
+Link Utilization: 11.86%
+Throughput: 2.86 flits/cycle
+
+inj_rate = 0.21
+Total Flits Injected: 10000
+total_latency = 31109 total_flits_received = 10000
+Average Latency: 3.11 cycles
+Link Utilization: 14.03%
+Throughput: 3.36 flits/cycle
+
+inj_rate = 0.24
+Total Flits Injected: 10000
+total_latency = 31238 total_flits_received = 10000
+Average Latency: 3.12 cycles
+Link Utilization: 15.94%
+Throughput: 3.83 flits/cycle
+
+inj_rate = 0.27
+Total Flits Injected: 10000
+total_latency = 31447 total_flits_received = 10000
+Average Latency: 3.14 cycles
+Link Utilization: 17.68%
+Throughput: 4.25 flits/cycle
+
+inj_rate = 0.30
+Total Flits Injected: 10000
+total_latency = 32288 total_flits_received = 10000
+Average Latency: 3.23 cycles
+Link Utilization: 20.21%
+Throughput: 4.82 flits/cycle
+
+inj_rate = 0.33
+Total Flits Injected: 10000
+total_latency = 32957 total_flits_received = 10000
+Average Latency: 3.30 cycles
+Link Utilization: 21.96%
+Throughput: 5.25 flits/cycle
+
+inj_rate = 0.36
+Total Flits Injected: 10000
+total_latency = 33708 total_flits_received = 10000
+Average Latency: 3.37 cycles
+Link Utilization: 24.09%
+Throughput: 5.75 flits/cycle
+
+inj_rate = 0.39
+Total Flits Injected: 10000
+total_latency = 33715 total_flits_received = 10000
+Average Latency: 3.37 cycles
+Link Utilization: 25.99%
+Throughput: 6.24 flits/cycle
+
+inj_rate = 0.42
+Total Flits Injected: 10000
+total_latency = 35154 total_flits_received = 10000
+Average Latency: 3.52 cycles
+Link Utilization: 28.13%
+Throughput: 6.72 flits/cycle
+
+inj_rate = 0.45
+Total Flits Injected: 10000
+total_latency = 36605 total_flits_received = 10000
+Average Latency: 3.66 cycles
+Link Utilization: 30.07%
+Throughput: 7.18 flits/cycle
+
+inj_rate = 0.48
+Total Flits Injected: 10000
+total_latency = 38030 total_flits_received = 10000
+Average Latency: 3.80 cycles
+Link Utilization: 31.70%
+Throughput: 7.62 flits/cycle
+
+inj_rate = 0.51
+Total Flits Injected: 10000
+total_latency = 39302 total_flits_received = 10000
+Average Latency: 3.93 cycles
+Link Utilization: 33.85%
+Throughput: 8.08 flits/cycle
+
+inj_rate = 0.54
+Total Flits Injected: 10000
+total_latency = 40682 total_flits_received = 10000
+Average Latency: 4.07 cycles
+Link Utilization: 35.43%
+Throughput: 8.50 flits/cycle
+
+inj_rate = 0.57
+Total Flits Injected: 10000
+total_latency = 44312 total_flits_received = 10000
+Average Latency: 4.43 cycles
+Link Utilization: 37.66%
+Throughput: 8.99 flits/cycle
+
+inj_rate = 0.60
+Total Flits Injected: 10000
+total_latency = 46890 total_flits_received = 10000
+Average Latency: 4.69 cycles
+Link Utilization: 39.08%
+Throughput: 9.42 flits/cycle
+
+inj_rate = 0.63
+Total Flits Injected: 10000
+total_latency = 52082 total_flits_received = 10000
+Average Latency: 5.21 cycles
+Link Utilization: 41.79%
+Throughput: 10.02 flits/cycle
+
+inj_rate = 0.66
+Total Flits Injected: 10000
+total_latency = 53800 total_flits_received = 10000
+Average Latency: 5.38 cycles
+Link Utilization: 42.98%
+Throughput: 10.30 flits/cycle
+
+inj_rate = 0.69
+Total Flits Injected: 10000
+total_latency = 90323 total_flits_received = 10000
+Average Latency: 9.03 cycles
+Link Utilization: 44.82%
+Throughput: 10.73 flits/cycle
+
+inj_rate = 0.72
+Total Flits Injected: 10000
+total_latency = 104438 total_flits_received = 10000
+Average Latency: 10.44 cycles
+Link Utilization: 45.59%
+Throughput: 10.99 flits/cycle
+
+inj_rate = 0.75
+Total Flits Injected: 10000
+total_latency = 128143 total_flits_received = 10000
+Average Latency: 12.81 cycles
+Link Utilization: 45.60%
+Throughput: 11.06 flits/cycle
+
+inj_rate = 0.78
+Total Flits Injected: 10000
+total_latency = 130595 total_flits_received = 10000
+Average Latency: 13.06 cycles
+Link Utilization: 47.36%
+Throughput: 11.49 flits/cycle
+
+inj_rate = 0.81
+Total Flits Injected: 10000
+total_latency = 131205 total_flits_received = 10000
+Average Latency: 13.12 cycles
+Link Utilization: 47.85%
+Throughput: 11.68 flits/cycle
+
+inj_rate = 0.84
+Total Flits Injected: 10000
+total_latency = 134289 total_flits_received = 10000
+Average Latency: 13.43 cycles
+Link Utilization: 49.21%
+Throughput: 12.06 flits/cycle
+
+inj_rate = 0.87
+Total Flits Injected: 10000
+total_latency = 138623 total_flits_received = 10000
+Average Latency: 13.86 cycles
+Link Utilization: 49.80%
+Throughput: 12.32 flits/cycle
+
+inj_rate = 0.90
+Total Flits Injected: 10000
+total_latency = 136781 total_flits_received = 10000
+Average Latency: 13.68 cycles
+Link Utilization: 51.03%
+Throughput: 12.61 flits/cycle
+
+inj_rate = 0.93
+Total Flits Injected: 10000
+total_latency = 137721 total_flits_received = 10000
+Average Latency: 13.77 cycles
+Link Utilization: 52.55%
+Throughput: 13.04 flits/cycle
+
+-------------------------
+
+
+
